@@ -29,36 +29,32 @@
     <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table-locale-all.min.js"></script>
 
     <link rel="stylesheet" href="./assets/css/principal.css" />
-    <title>Modificar Proveedores</title>
+    <title>Modificar Producto</title>
 </head>
 <body>
 <form>
-    <div class="form-group">
-        <label for="idNombreCompania">Nombre Compañia</label>
-        <input type="text" class="form-control" id="idNombreCompania">
+    <div class="row justify-content-center mt-5">
+        <div class="col-4">
+            <div class="form-group ">
+                <label for="idNombreProducto">Nombre Producto</label>
+                <input type="text" class="form-control" id="idNombreProducto">
+            </div>
+            <div class="form-group">
+                <label for="idNombrePrecio">Precio</label>
+                <input type="text" class="form-control" id="idNombrePrecio">
+            </div>
+            <div class="form-group">
+                <label for="idNombreStock">Stock</label>
+                <input type="text" class="form-control" id="idNombreStock">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkDescontinuado">
+                <label class="form-check-label" for="checkDescontinuado">Descontinuado</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Crear Producto</button>
+        </div> 
     </div>
-    <div class="form-group">
-        <label for="idNombreContacto">Nombre Contacto</label>
-        <input type="text" class="form-control" id="idNombreContacto">
-    </div>
-    <div class="form-group">
-        <label for="idNombreDireccion">Direccion</label>
-        <input type="text" class="form-control" id="idNombreDireccion">
-    </div>
-    <div class="form-group">
-        <label for="idNombreRegion">Region</label>
-        <input type="text" class="form-control" id="idNombreRegion">
-    </div>
-    <div class="form-group">
-        <label for="idNombreCiudad">Ciudad</label>
-        <input type="text" class="form-control" id="idNombreCiudad">
-    </div>
-    <div class="form-group">
-        <label for="idNombreTelefono">Telefono</label>
-        <input type="text" class="form-control" id="idNombreTelefono">
-    </div>
-    <br>
-    <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 </body>
 </html>

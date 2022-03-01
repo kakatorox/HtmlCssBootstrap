@@ -29,83 +29,23 @@
     <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table-locale-all.min.js"></script>
 
     <link rel="stylesheet" href="./assets/css/principal.css" />
+    <script src="./assets/js/listaProveedores.js"></script>
     <title>Proveedores</title>
 </head>
 <body>
-    <div class="container">        
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">ID Proveedores</th>
-                    <th scope="col">Nombre Compañia</th>
-                    <th scope="col">Nombre Contacto</th>
-                    <th scope="col">Direccion</th>
-                    <th scope="col">Region</th>
-                    <th scope="col">Ciudad</th>
-                    <th scope="col">Telefono</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>jelouooo</td>
-                    <td>@twitter</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Larry the Bird</td>
-                    <td>jelouooo</td>
-                    <td>@twitter</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Larry the Bird</td>
-                    <td>jelouooo</td>
-                    <td>@twitter</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-            </tbody>
+    <div class="container mb-5">
+        <table class="table table-hover" id="tblProveedor">
         </table>
         <div class="input-group col-md-8">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Filtrar</button>
+                <button class="btn btn-outline-secondary"  id="idEliminarProveedor" type="button">Eliminar</button>
             </div>
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Modificar</button>
+                <button class="btn btn-outline-secondary" id="idModificarProveedor" href="#" type="button">
+                    Modificar
+                </button>
             </div>
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Eliminar</button>
-            </div>
-            <input type="text" class="form-control">
         </div>
     </div>
-    
 </body>
 </html>

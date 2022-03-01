@@ -32,5 +32,13 @@ $(document).ready(function () {
             title: 'Descontinuado',
             width: '130px'
         }]
-    })
+    });
+    $("#idModificarProducto").click(function (event) {
+        console.log("Click Modificar Producto");
+        $("#idContenido").load('modificarProducto.html');
+    });
+    $("#idEliminarProducto").click(function (event) {
+        console.log("Eliminar Producto");
+        alert("Producto Eliminado");
+    });
 });

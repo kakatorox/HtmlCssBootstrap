@@ -60,5 +60,14 @@ $(document).ready(function () {
             title: 'Vía Envío',
             width: '150px'
         }]
-    })
+    });
+
+    $("#idModificarOrden").click(function (event) {
+        console.log("Click Modificar Producto");
+        $("#idContenido").load('modificarOrdenCompra.html');
+    });
+    $("#idEliminarOrden").click(function (event) {
+        console.log("Eliminar Orden de Compra");
+        alert("Orden Eliminada");
+    });
 });

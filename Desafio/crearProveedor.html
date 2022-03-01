@@ -35,58 +35,44 @@
         <form>
             <div class="row">
                 <div class="form-group col-3">
-                    <label for="idFechaRequerimiento">Fecha Requerimiento</label>
-                    <input type="date" class="form-control" id="idFechaRequerimiento">
+                    <label for="idNombreCompania">Nombre Compañia</label>
+                    <input type="text" class="form-control" id="idFechaRequerimiento">
                 </div>
                 <div class="form-group col-3">
-                    <label for="idFechaEnvio">Fecha Envio</label>
-                    <input type="date" class="form-control" id="idFechaEnvio">
+                    <label for="idNombreContacto">Nombre Contacto</label>
+                    <input type="text" class="form-control" id="idFechaEnvio">
                 </div>
                 <div class="form-group col-6">
-                    <label for="idNombreReceptor">Nombre Receptor</label>
+                    <label for="idDireccion">Direccion</label>
                     <input type="text" class="form-control" id="idNombreReceptor">
                 </div>
             </div>            
             <div class="row">
-                <div class="form-group col-6">
-                    <label for="idDireccion">Direccion</label>
-                    <input type="text" class="form-control" id="idDireccion">
+                <div class="form-group col-4">
+                    <label for="idRegion">Region</label>
+                    <select class="form-control" id="idSelectEnvio">
+                        <option>II Region</option>
+                        <option>IV Region</option>
+                        <option>VIII Region</option>
+                        <option>RM</option>
+                    </select>
                 </div>
-                <div class="form-group col-3">
-                    <label for="idCodigoPostal">Codigo Postal</label>
-                    <input type="text" class="form-control" id="idCodigoPostal">
+                <div class="form-group col-4">
+                    <label for="idSelectEnvio">Ciudad</label>
+                    <select class="form-control" id="idSelectEnvio">
+                        <option>Antofagasta</option>
+                        <option>La Serena</option>
+                        <option>Concepcion</option>
+                        <option>Santiago</option>
+                    </select>
                 </div>
                 <div class="form-group  col-3">
-                    <label for="idCiudad">Ciudad</label>
+                    <label for="idTelefono">Telefono</label>
                     <input type="text" class="form-control" id="idCiudad">
                 </div>
             </div>
-            <div class="row">
-                <div class="form-group col-4">
-                    <label for="idRegion">Region</label>
-                    <input type="text" class="form-control" id="idRegion">
-                </div>
-                <div class="form-group col-4">
-                    <label for="idSelectEnvio">Pais</label>
-                    <select class="form-control" id="idSelectEnvio">
-                        <option>Chile</option>
-                        <option>Peru</option>
-                        <option>Argentina</option>
-                        <option>Rusia</option>
-                    </select>
-                </div>
-                <div class="form-group col-4">
-                    <label for="idSelectEnvio">Selecione Envio</label>
-                    <select class="form-control" id="idSelectEnvio">
-                        <option>Terrestre</option>
-                        <option>Aereo</option>
-                        <option>Maritimo</option>
-                        <option>Dimensional</option>
-                    </select>
-                </div>
-            </div>
-                <br>
-                <button type="submit" class="btn btn-primary">Crear Orden</button>
+            <br>
+            <button type="submit" class="btn btn-primary">Crear Proveedor</button>
         </form>
     </div>
 </body>
