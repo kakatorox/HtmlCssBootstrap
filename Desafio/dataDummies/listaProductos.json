@@ -1,0 +1,66 @@
+[
+    {
+        "producto_id": 1,
+        "categoria": "Categoria 1",
+        "proveedor": "Proveedor 1",
+        "precio": 12,
+        "stock": "Stock 1",
+        "descontinuado": "SI"
+    },
+    {
+        "producto_id": 1,
+        "categoria": "Categoria 1",
+        "proveedor": "Proveedor 1",
+        "precio": 12,
+        "stock": "Stock 1",
+        "descontinuado": "SI"
+    },
+    {
+        "producto_id": 1,
+        "categoria": "Categoria 1",
+        "proveedor": "Proveedor 1",
+        "precio": 12,
+        "stock": "Stock 1",
+        "descontinuado": "SI"
+    },
+    {
+        "producto_id": 1,
+        "categoria": "Categoria 1",
+        "proveedor": "Proveedor 1",
+        "precio": 12,
+        "stock": "Stock 1",
+        "descontinuado": "SI"
+    },
+    {
+        "producto_id": 1,
+        "categoria": "Categoria 1",
+        "proveedor": "Proveedor 1",
+        "precio": 12,
+        "stock": "Stock 1",
+        "descontinuado": "NO"
+    },
+    {
+        "producto_id": 1,
+        "categoria": "Categoria 1",
+        "proveedor": "Proveedor 1",
+        "precio": 12,
+        "stock": "Stock 1",
+        "descontinuado": "NO"
+    },
+    {
+        "producto_id": 1,
+        "categoria": "Categoria 1",
+        "proveedor": "Proveedor 1",
+        "precio": 12,
+        "stock": "Stock 1",
+        "descontinuado": "SI"
+    },
+    {
+        "producto_id": 1,
+        "categoria": "Categoria 1",
+        "proveedor": "Proveedor 1",
+        "precio": 12,
+        "stock": "Stock 1",
+        "descontinuado": "NO"
+    }
+]
