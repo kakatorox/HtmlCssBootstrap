@@ -22,125 +22,110 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./assets/css/principal.css" />
-    <script src="./assets/js/calculadora.js"></script>
-    <script src="./assets/js/grados.js"></script>
-    <script src="./assets/js/conversionDias.js"></script>
-    <script src="./assets/js/prom.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/desafios.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-4">
-            <h2>Calculadora</h2>
-        </div>
+<body onload="loadPage()">
+    <div class="border m-5 mr-auto">
+        <fieldset>
+            <legend class="border">Calculadora</legend>
+            <div class="row  justify-content-center">
+                <div class="col-3">
+                    <label for="">Ingrese Numero 1 </label>
+                    <input type="text" id="idNum1" aria-label="Ingrese ">
+                </div>
+                <div class="col-3">
+                    <label for="">Ingrese Numero 2 </label>
+                    <input type="text" id="idNum2">
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-center">
+                <div class="col-6">
+                    <input type="button" onclick="sumar()" value="SUMAR">
+                    <input type="button" onclick="resta()" value="RESTA">
+                    <input type="button" onclick="multiplicar()" value="MULTICPLICAR">
+                    <input type="button" onclick="dividir()" value="DIVIDIR">
+                    <input type="button" onclick="modulo()" value="MODULO">
+                </div>
+            </div>
+            <div class="row mt-2 justify-content-center">
+                <dir class=" border col-4">
+                    <label>RESULTADO ES =</label>
+                    <label for="" id="idResultado" class="bold"></label>
+                </dir>
+            </div>
+        </fieldset>
     </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-3">
-            <label for="">Ingrese Numero 1 </label>
-            <input type="text" id="idNum1" aria-label="Ingrese ">
-        </div>
-        <div class="col-3">
-            <label for="">Ingrese Numero 2 </label>
-            <input type="text" id="idNum2">
-        </div>
+
+    <div class="border m-5 mr-auto">
+        <fieldset>
+            <legend class="border">Temperatura</legend>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <label for="">Ingrese °C</label>
+                    <input type="text" id="idGradosCelsius">
+                </div>
+                <div class="col-3">
+                    <input type="button" onclick="conversion()" value="Conversion">
+                </div>
+            </div>
+            <div class="row mt-2 justify-content-center">
+                <dir class=" border col-4 ml-5 mr-5">
+                    <label>Grados Kelvin :</label>
+                    <label for="" id="idKelvin"></label>
+                </dir>
+                <dir class=" border col-4 ml-5 mr-5">
+                    <label>Grados Fahrenheit :</label>
+                    <label for="" id="idFahrenheit"></label>
+                </dir>
+            </div>
+        </fieldset>        
     </div>
-    <div class="row mt-3 justify-content-center">
-        <div class="col-6">
-            <input type="button" onclick="sumar()" value="SUMAR">
-            <input type="button" onclick="resta()" value="RESTA">
-            <input type="button" onclick="multiplicar()" value="MULTICPLICAR">
-            <input type="button" onclick="dividir()" value="DIVIDIR">
-            <input type="button" onclick="modulo()" value="MODULO">
-        </div>
+    <div class="border m-5 mr-auto">
+        <fieldset>
+            <legend class="border">Días a Años</legend>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <label for=""> Año Seleccionado</label>
+                    <select class="form-control  scrollable-menu" id="aDrop">
+                    </select>                   
+                    <label for="" type="text" id="idAnioBi"></label>
+            </div>
+            <div class="row mt-2 justify-content-center">
+                <dir class=" border col-4 ml-5 mr-5">
+                    <label>Años :</label>
+                    <label for="" id="idAnios"></label>
+                </dir>
+                <dir class=" border col-4 ml-5 mr-5">
+                    <label>Semanas :</label>
+                    <label for="" id="idSemanas"></label>
+                </dir>
+                <dir class=" border col-4 ml-5 mr-5">
+                    <label>Dias :</label>
+                    <label for="" id="idObtDias"></label>
+                </dir>
+            </div>
+        </fieldset>        
     </div>
-    <div class="row mt-2 justify-content-center">
-        <dir class=" border col-4">
-            <label>RESULTADO ES =</label>
-            <label for="" id="idResultado" class="bold"></label>
-        </dir>
-    </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-4">
-            <h2>Temperatura</h2>
-        </div>
-    </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-5">
-            <label for="">Ingrese °C</label>
-            <input type="text" id="idGradosCelsius">
-        </div>
-        <div class="col-3">
-            <input type="button" onclick="conversion()" value="Conversion">
-        </div>
-    </div>
-    <div class="row mt-2 justify-content-center">
-        <dir class=" border col-4 ml-5 mr-5">
-            <label>Grados Kelvin :</label>
-            <label for="" id="idKelvin"></label>
-            </dir>
-        <dir class=" border col-4 ml-5 mr-5">
-            <label>Grados Fahrenheit :</label>
-            <label for="" id="idFahrenheit"></label>
-        </dir>
-    </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-4">
-            <h2>Dias a Años</h2>
-        </div>
-    </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-5">
-            <label for="">Ingrese Días</label>
-            <input type="text" id="idDias">
-        </div>
-        <div class="col-3">
-            <input type="button" onclick="calculoDias()" value="Transformar">
-        </div>
-    </div>
-    <div class="row mt-2 justify-content-center">
-        <dir class=" border col-4 ml-5 mr-5">
-            <label>Años :</label>
-            <label for="" id="idAnios"></label>
-        </dir>
-        <dir class=" border col-4 ml-5 mr-5">
-            <label>Semanas :</label>
-            <label for="" id="idSemanas"></label>
-        </dir>
-        <dir class=" border col-4 ml-5 mr-5">
-            <label>Dias :</label>
-            <label for="" id="idObtDias"></label>
-        </dir>
-    </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-4">
-            <h2>Suma y Promedio 5 Num</h2>
-        </div>
-    </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-4">
-            <label for="">Ingrese Los 5 Numeros</label>
-            <input type="text" id="idDias1">
-            <input type="text" id="idDias2">
-            <input type="text" id="idDias3">
-            <input type="text" id="idDias4">
-            <input type="text" id="idDias5">
-        </div>
-    </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-3">
-            <input type="button" onclick="symProm()" value="Calcular">
-        </div>
-    </div>
-    <div class="row mt-2 justify-content-center">
-        <dir class=" border col-4 ml-5 mr-5">
-            <label>Suma :</label>
-            <label for="" id="idSuma"></label>
-        </dir>
-        <dir class=" border col-4 ml-5 mr-5">
-            <label>Promedio :</label>
-            <label for="" id="idProm"></label>
-        </dir>
+
+    <div class="border m-5 mr-auto">
+        <fieldset>
+            <legend class="border">Suma y Promedio 5 Número</legend>
+            <div class="row mt-5 justify-content-center">
+                <input type="button" onclick="sumProm()" value="Calcular">
+            </div>
+            <div class="row mt-2 justify-content-center">
+                <dir class=" border col-4 ml-5 mr-5">
+                    <label>Suma :</label>
+                    <label for="" id="idSuma"></label>
+                </dir>
+                <dir class=" border col-4 ml-5 mr-5">
+                    <label>Promedio :</label>
+                    <label for="" id="idProm"></label>
+                </dir>
+            </div>
+        </fieldset>
     </div>
 </body>
 </html>!
