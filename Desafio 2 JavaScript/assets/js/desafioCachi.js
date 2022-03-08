@@ -1,6 +1,7 @@
+
 function cachi() {
     var num = parseInt(document.getElementById("idCant").value);
-   /* var maquina;
+    var maquina;
     for (index = 1 ; index <=num ; index++) {
         var jugador = prompt("Elegir Piedra, Papel o Tijera");
         var ju = Math.floor((Math.random() * 3) + 1);        
@@ -29,8 +30,11 @@ function cachi() {
 
         alert(ju);
 
-    }*/
-    stringFor = '<tr>' +
+    }
+
+
+
+    var stringFor = '<tr>' +
         '<td>Row 2 - Column 1</td>' +
         '<td>Row - 2 Column 2</td>' +
         '<td>Row - 2 Column 2</td>' +
@@ -38,8 +42,9 @@ function cachi() {
     crear(stringFor);
     document.getElementById("idResultado").innerText = num;
 };
-var stringFor;
-function crear(stringFor){
+
+function crear(string){
+    var stringFor = string;
     alert(stringFor);
     var select = '<table class="table table-hover col-6"id="mytable">' +
                     '<thead>' +
