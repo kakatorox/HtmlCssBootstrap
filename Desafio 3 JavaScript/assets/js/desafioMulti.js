@@ -17,4 +17,12 @@ function multi(){
         document.getElementById("idJuegoGanado").innerHTML = factorial(num);
         }  
         
+        var set = new Set("preguuuuntaaaaa");
+        console.log(set);
+
+        var compras={
+            manzana :2,
+        };
+        var keys = Object.keys(compras);
+        console.log(keys);
 };
