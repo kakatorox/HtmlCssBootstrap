@@ -23,6 +23,12 @@ function multi(){
         var compras={
             manzana :2,
         };
+    var keys = Object.values(compras);
+    var keys = Object.entries(compras);
         var keys = Object.keys(compras);
         console.log(keys);
+
+    var carbohidratos = ["Papas","Fideos","Avena","Arooz"];
+    carbohidratos.pop();
+    console.log(carbohidratos);
 };
