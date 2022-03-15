@@ -1,0 +1,27 @@
+.dropdown-menu {
+    max-height: 280px;
+    overflow-y: auto;
+}
+.spanNombre{
+    margin:auto;
+    font-weight:bold;
+}
+.encontradoSuperHero{
+    text-align: center;
+    padding: 10px;
+}
+.fotoSuperHero{
+    text-align: center;
+    padding: 10px;
+    margin-right: 5px;
+    width: 250px;
+    height: 250px; 
+    display: block;
+}
+
+.hrSuper{
+    display: block; 
+    margin: 0.5em; 
+    width:50%; 
+    border-width: 1px;
+}

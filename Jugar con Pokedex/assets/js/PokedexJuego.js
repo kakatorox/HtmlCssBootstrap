@@ -49,6 +49,7 @@ $(document).ready(function (){
         url: "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126",
         dataType: "json",
         success: function (data) {
+            console.log(data);
             $('#idTablePokeBabys').bootstrapTable('load', data.results);
         },
         error: function (dataError) {
